@@ -10771,3 +10771,11 @@ header.masthead .post-heading .meta a {
   color: #fff;
   opacity: .8;
 }
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../assets/preloader.gif') no-repeat center center rgb(255,255,255);
+}

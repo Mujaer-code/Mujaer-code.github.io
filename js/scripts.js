@@ -64,4 +64,13 @@ window.addEventListener("scroll", () => {
             if ($(".card:hidden").length == 0) {
                 $(".button-load").fadeOut('slow')
             }
-        })
+        });
+
+//loader
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'complete') {
+         document.getElementById('interactive');
+         document.getElementById('loader').style.visibility="hidden";
+  }
+}
