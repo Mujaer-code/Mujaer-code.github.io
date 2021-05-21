@@ -73,4 +73,47 @@ document.onreadystatechange = function () {
          document.getElementById('interactive');
          document.getElementById('loader').style.visibility="hidden";
   }
+};
+
+//Filter
+function myFunction() {
+    var input, filter, ul, li, h1, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("list-horizontal");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        h1 = li[i].getElementsByTagName("h1")[0];
+        txtValue = h1.textContent || h1.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+};
+
+//animation search bar
+$(function() {
+  $("input").on("click", function(e) {
+    $("input").addClass("active");
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is("input") === false) {
+      $("input").removeClass("active");
+    }
+  });
+});
+
+/*===== MOUSEMOVE HOME IMG =====*/
+document.addEventListener('mousemove', move);
+function move(e){
+    this.querySelectorAll('.move').forEach(layer =>{
+        const speed = layer.getAttribute('data-speed')
+
+        const x = (window.innerWidth - e.pageX*speed)/120
+        const y = (window.innerHeight - e.pageY*speed)/120
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
 }

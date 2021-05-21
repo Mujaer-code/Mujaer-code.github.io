@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Seuntai Kertas</title>
+        <title>Articles</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -42,98 +42,68 @@
         </nav>
 
         <!-- Page Header-->
-        <div class="home">
-                <div class="row-home">
-
-                    <div class="col-home">
-                        <div class="home-img">
-                            <img src="assets/home/home-logo.svg" alt="Seuntai Kertas" data-speed="-2" class="move">
-                            <img src="assets/home/polygon-home1.svg" data-speed="1" class="move">
-                            <img src="assets/home/polygon-home2.svg" data-speed="2" class="move">
-                            <img src="assets/home/polygon-home3.svg" data-speed="1" class="move">
-                            <img src="assets/home/polygon-home4.svg" data-speed="-1" class="move">
-                            <img src="assets/home/polygon-home5.svg" data-speed="-2" class="move">
-                            <img src="assets/home/polygon-home6.svg" data-speed="-4" class="move">
-                            <img src="assets/home/polygon-home7.svg" data-speed="4" class="move">
+        <header class="masthead" style="background-image: url('assets/img/article-bg.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="page-heading">
+                            <h1>Article</h1>
+                            <span class="subheading">Find interesting articles</span>
                         </div>
                     </div>
-
-                    <div class="col-home">
-                        <div class="home-text">
-                            <h1>Seuntai Kertas</h1>
-                            <p>Temukan artikel - artikel menarik</p>
-                            <button type="button" class="button-home" onclick="location.href='article.html'">Explore</button>
-                        </div>
-                        </div>
-
-                        
                 </div>
-        </div>
+            </div>
+        </header>
 
 
-         <!-- Main Content-->
-         <div class="text-center">
-             <h2 class="section-heading text-uppercase">Recent Article</h2>
-         </div>
-
-        <div class="card-holder">
-            <div class="card">
-                <img src="assets/img/post-bg.jpg" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">Pentingnya Vitamin C Untuk Tubuh</h1>
+         <!--Search-->
+<div class="searchContainer">
+    <div class="search">
+        <div class="icon"></div>
+            <div class="input">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for articles..">
+            </div>
+            <span class="erase-input" onclick="document.getElementById('myInput').value = '' "></span>
+    </div>
+</div>
+                   <!-- Main Content-->     
+        <div class="card-holder-horizontal">
+            <ul id="list-horizontal">
+            <li>
+            <div class="card-horizontal">
+                <img src="assets/img/post-bg.jpg" class="card-img-horizontal">
+                <div class="card-content-horizontal">
+                    <h1 class="card-name-horizontal"><a href="pentingnya-vit-c-untuk-tubuh.html">Pentingnya Vitamin C Untuk Tubuh</a></h1>
                     <p>Apakah tanpa vitamin C, tubuh kita dapat bertahan? Apa itu radikal bebas? Apa yang dimaksud antioksidan? Pertanyaan-pertanyaan tersebut mari kita bahas. </p>
-                <a href="pentingnya-vit-c-untuk-tubuh.html" class="read-more-btn">Read More</a>
+                
                 </div>
             </div>
+            </li>
 
-            <div class="card">
-                <img src="assets/img/post/mental.png" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">AKSI KOCAK PETUGAS SATGAS COVID INI</h1>
+            <li>
+            <div class="card-horizontal">
+                <img src="assets/img/post/mental.png" class="card-img-horizontal">
+                <div class="card-content-horizontal">
+                    <h1 class="card-name-horizontal"><a href="#">AKSI KOCAK PETUGAS SATGAS COVID INI</a></h1>
                     <p>loroegeogjegoejg</p>
-                <a href="index.html" class="read-more-btn">Read More</a>
                 </div>
             </div>
+        </li>
 
-            <div class="card">
-                <img src="assets/img/post/mental.png" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">The bloody</h1>
+        <li>
+            <div class="card-horizontal">
+                <img src="assets/img/post/mental.png" class="card-img-horizontal">
+                <div class="card-content-horizontal">
+                    <h1 class="card-name-horizontal"><a href="#">The bloody</a></h1>
                     <p>loroegeogjegoejg</p>
-                <a href="index.html" class="read-more-btn">Read More</a>
                 </div>
             </div>
+            </li>
 
-              <div class="card" style="display: none;">
-                <img src="assets/img/post/mental.png" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">The bloody</h1>
-                    <p>loroegeogjegoejg</p>
-                <a href="index.html" class="read-more-btn">Read More</a>
-                </div>
-            </div>
-
-              <div class="card" style="display: none;">
-                <img src="assets/img/post/mental.png" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">The bloody</h1>
-                    <p>loroegeogjegoejg</p>
-                <a href="index.html" class="read-more-btn">Read More</a>
-                </div>
-            </div>
-
-              <div class="card" style="display: none;">
-                <img src="assets/img/post/mental.png" class="card-img">
-                <div class="card-content">
-                    <h1 class="card-name">The bloody aksi kosack kcahegn ekge negeuhge</h1>
-                    <p>loroegeogjegoejg dngege kegje ken angeb kfegne qientg entiem gentbe wutng e britrn ekrejten brrmtei </p>
-                <a href="index.html" class="read-more-btn">Read More</a>
-                </div>
-            </div>
+        </ul>
         </div>
-
-                <!-- See more-->
-                <button class="button-load text-uppercase">Load More</button>
+        
 
        <!-- Footer-->
        <footer class="footer">
